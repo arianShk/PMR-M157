@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+body {
+    background-image: url('images/pmr-background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family:'Silkscreen';
+    font-size: 4.5em;
+}
+
+h3 {
+    font-family:'Silkscreen';
+    font-size: 1em;
+}
+
+h1, h3 {
+    background: linear-gradient(to right, #FFA500, #d73900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
+    padding-top: 2rem;
+}
+
+.levels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    font-family: 'VT323', monospace ;
+    font-size: 24px;
+	/* background: #7C7C7C; */
+	background: linear-gradient(to right, #FFA500, #d73900);
+	border-bottom: 6px inset #d73900;
+	border-left: 6px inset #d73900;
+	border-right: 6px inset #FFA500;
+	border-top: 6px inset #FFA500;
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2.2rem;
+	margin: 0rem;
+	min-width: 200px;
+	padding: .5rem;
+	text-transform: uppercase;
+	width: auto;
+	
+	&:focus,
+	&:hover {
+		background: linear-gradient(to right, #FFA500, #d73900);
+	}
+}
+
+.levels a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+h3 a {
+    cursor: unset;
+}
